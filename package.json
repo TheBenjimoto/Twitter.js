@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/jmpressman/twitter-js/issues"
   },
-  "homepage": "https://github.com/jmpressman/twitter-js#readme"
+  "homepage": "https://github.com/jmpressman/twitter-js#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }
