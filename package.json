@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/jmpressman/twitter-js#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "nunjucks": "^3.0.0",
+    "volleyball": "^1.4.1"
   }
 }
