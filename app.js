@@ -8,7 +8,8 @@ let locals = {
   people: [
     {name: 'Ben'},
     {name: 'Jake'}
-  ]
+  ],
+  hungry: false
 };
 
 app.set('view engine', 'html');
