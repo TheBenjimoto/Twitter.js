@@ -5,6 +5,11 @@ app.listen(3000, function () {
   console.log('Server listening');
 });
 
+app.use('/special/', function(req, res, next) {
+	console.log("you reached my special area.");
+	next();
+})
+
 app.use('/', function(req, res, next) {
   console.log('Incoming: ' + req.method + '; ' + req.url);
   next();
