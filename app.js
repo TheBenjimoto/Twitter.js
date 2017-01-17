@@ -2,6 +2,9 @@ const express = require( 'express' );
 const app = express(); // creates an instance of an express application
 const volleyball = require( 'volleyball' );
 const nunjucks = require( 'nunjucks' );
+const routes = require('./routes');
+app.use('/', routes);
+app.use(express.static('public'))
 
 let locals = {
   title: 'Fun Times',
@@ -27,10 +30,10 @@ app.listen(3000, function () {
 
 app.use(volleyball);
 
-app.get('/', function(req, res, next) {
-  res.render('index', locals);
-});
+// app.get('/', function(req, res, next) {
+//   res.render('index', locals);
+// });
 
-app.get('/news', function(req, res, next) {
-  res.send('Here\'s the news');
-});
+// app.get('/news', function(req, res, next) {
+//   res.send('Here\'s the news');
+// });
